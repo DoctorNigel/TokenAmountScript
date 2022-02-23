@@ -10,8 +10,6 @@ const arrayToTxtFile = require('array-to-txt-file');
 const { waitForDebugger } = require('inspector');
 const { dirname } = require('path');
 
-
-
 const FileTest = async () => {
 
     var stringArray = []
@@ -30,7 +28,7 @@ const FileTest = async () => {
     var csvToJson = {}
 
     await csv()
-        .fromFile("raffle_3.csv")
+        .fromFile("raffle_4.csv")
         .then(function(jsonArrayObject) {
             //console.log(jsonArrayObject.length)
             csvToJson = jsonArrayObject
@@ -40,7 +38,7 @@ const FileTest = async () => {
     var accountIdList = []
     var discordNameList = []
     var cleanedJsonArray = []
-    var outliers = ["0.0.586912", "0.0.584180", "0.0.5829654"]
+    var outliers = ["0.0.586912", "0.0.584180", "0.0.5829654", "0.0.585684"]
 
 
     for (var entry of csvToJson) {
